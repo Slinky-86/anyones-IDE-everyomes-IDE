@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude cache and temporary files -->
+    <exclude domain="file" path="cache/" />
+    <exclude domain="file" path="temp/" />
+    
+    <!-- Include user data -->
+    <include domain="file" path="projects/" />
+    <include domain="sharedpref" path="user_preferences.xml" />
+</full-backup-content>

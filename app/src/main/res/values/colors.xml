@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#1976D2</color>
+    <color name="primary_blue_variant">#1565C0</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+    <color name="primary_blue_light">#42A5F5</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary_orange">#FF9800</color>
+    <color name="secondary_orange_variant">#F57C00</color>
+    <color name="secondary_orange_dark">#E65100</color>
+    <color name="secondary_orange_light">#FFB74D</color>
+    
+    <!-- Surface Colors - Dark Theme -->
+    <color name="surface_dark">#121212</color>
+    <color name="surface_variant_dark">#1E1E1E</color>
+    <color name="background_dark">#0A0A0A</color>
+    <color name="on_surface_dark">#E0E0E0</color>
+    <color name="on_surface_variant_dark">#B0B0B0</color>
+    
+    <!-- Surface Colors - Light Theme -->
+    <color name="surface_light">#FAFAFA</color>
+    <color name="surface_variant_light">#F5F5F5</color>
+    <color name="background_light">#FFFFFF</color>
+    <color name="on_surface_light">#212121</color>
+    <color name="on_surface_variant_light">#757575</color>
+    
+    <!-- Code Editor Colors -->
+    <color name="code_background">#1E1E1E</color>
+    <color name="code_foreground">#D4D4D4</color>
+    <color name="code_selection">#264F78</color>
+    <color name="code_line_number">#858585</color>
+    <color name="code_current_line">#2A2D2E</color>
+    
+    <!-- Syntax Highlighting -->
+    <color name="syntax_keyword">#569CD6</color>
+    <color name="syntax_string">#CE9178</color>
+    <color name="syntax_comment">#6A9955</color>
+    <color name="syntax_number">#B5CEA8</color>
+    <color name="syntax_function">#DCDCAA</color>
+    <color name="syntax_type">#4EC9B0</color>
+    <color name="syntax_variable">#9CDCFE</color>
+    <color name="syntax_operator">#D4D4D4</color>
+    
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_yellow">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="info_blue">#2196F3</color>
+    
+    <!-- Terminal Colors -->
+    <color name="terminal_background">#0C0C0C</color>
+    <color name="terminal_foreground">#CCCCCC</color>
+    <color name="terminal_cursor">#FFFFFF</color>
+    <color name="terminal_selection">#264F78</color>
+    
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Splash Screen Colors -->
+    <color name="splash_background">#263238</color>
+    <color name="splash_icon_background">#37474F</color>
+    
+    <!-- Material Design Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default Theme - Required for resource linking -->
+    <style name="Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_blue_dark</item>
+        <item name="colorAccent">@color/secondary_orange</item>
+    </style>
+    
+    <!-- Base application theme using AppCompat for compatibility -->
+    <style name="Theme.AnyoneIDE" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_blue_dark</item>
+        <item name="colorAccent">@color/secondary_orange</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/error_red</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/surface_dark</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Window properties -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+    
+    <!-- Light theme variant -->
+    <style name="Theme.AnyoneIDE.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_blue_dark</item>
+        <item name="colorAccent">@color/secondary_orange</item>
+        
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/on_surface_light</item>
+        
+        <item name="colorError">@color/error_red</item>
+        
+        <item name="android:statusBarColor">@color/surface_light</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+    
+    <!-- Code editor theme -->
+    <style name="Theme.CodeEditor">
+        <item name="android:background">@color/code_background</item>
+        <item name="android:textColor">@color/code_foreground</item>
+        <item name="android:textColorHighlight">@color/code_selection</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+    
+    <!-- Terminal theme -->
+    <style name="Theme.Terminal">
+        <item name="android:background">@color/terminal_background</item>
+        <item name="android:textColor">@color/terminal_foreground</item>
+        <item name="android:textColorHighlight">@color/terminal_selection</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+    
+    <!-- Splash screen theme -->
+    <style name="Theme.AnyoneIDE.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_anyone_ide</item>
+        <item name="windowSplashScreenAnimationDuration">1500</item>
+        <item name="postSplashScreenTheme">@style/Theme.AnyoneIDE</item>
+        
+        <!-- Status bar and navigation bar colors -->
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+    </style>
+
+</resources>

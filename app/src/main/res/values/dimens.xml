@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_xs">10sp</dimen>
+    <dimen name="text_size_sm">12sp</dimen>
+    <dimen name="text_size_md">14sp</dimen>
+    <dimen name="text_size_lg">16sp</dimen>
+    <dimen name="text_size_xl">18sp</dimen>
+    <dimen name="text_size_xxl">24sp</dimen>
+    <dimen name="text_size_title">28sp</dimen>
+    
+    <!-- Code editor -->
+    <dimen name="code_text_size">14sp</dimen>
+    <dimen name="code_line_height">20dp</dimen>
+    <dimen name="code_line_number_width">48dp</dimen>
+    <dimen name="code_gutter_width">8dp</dimen>
+    
+    <!-- Terminal -->
+    <dimen name="terminal_text_size">12sp</dimen>
+    <dimen name="terminal_line_height">18dp</dimen>
+    
+    <!-- UI elements -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="icon_size_sm">16dp</dimen>
+    <dimen name="icon_size_md">24dp</dimen>
+    <dimen name="icon_size_lg">32dp</dimen>
+    <dimen name="icon_size_xl">48dp</dimen>
+    
+    <!-- Panels -->
+    <dimen name="sidebar_width">280dp</dimen>
+    <dimen name="bottom_panel_height">300dp</dimen>
+    <dimen name="right_panel_width">320dp</dimen>
+    
+    <!-- Cards and elevation -->
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="dialog_corner_radius">12dp</dimen>
+    
+    <!-- Minimum touch targets -->
+    <dimen name="min_touch_target">48dp</dimen>
+</resources>

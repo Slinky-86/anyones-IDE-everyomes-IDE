@@ -1,0 +1,77 @@
+[package]
+name = "rust_native_build"
+version = "0.1.0"
+edition = "2021"
+authors = ["Anyone IDE Team"]
+description = "Native build system for Anyone IDE written in Rust"
+
+[lib]
+name = "rust_native_build"
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = { version = "0.21.1", features = ["invocation"] }
+log = "0.4.20"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.108"
+walkdir = "2.4.0"
+anyhow = "1.0.75"
+thiserror = "1.0.50"
+sys-info = { version = "0.9.1", optional = true }
+uuid = { version = "1.4.1", features = ["v4"] }
+lazy_static = "1.4.0"
+regex = "1.10.2"
+tree-sitter = { version = "0.20.10", optional = true }
+reqwest = { version = "0.11.22", features = ["blocking", "json"], optional = true }
+zip = { version = "0.6.6", optional = true }
+tar = { version = "0.4.40", optional = true }
+flate2 = { version = "1.0.28", optional = true }
+
+# Tree-sitter language parsers
+tree-sitter-rust = { version = "0.20.4", optional = true }
+tree-sitter-kotlin = { version = "0.3.1", optional = true }
+tree-sitter-java = { version = "0.20.1", optional = true }
+tree-sitter-c = { version = "0.20.6", optional = true }
+tree-sitter-cpp = { version = "0.20.3", optional = true }
+tree-sitter-python = { version = "0.20.4", optional = true }
+tree-sitter-javascript = { version = "0.20.1", optional = true }
+tree-sitter-typescript = { version = "0.20.3", optional = true }
+tree-sitter-go = { version = "0.20.0", optional = true }
+tree-sitter-html = { version = "0.19.0", optional = true }
+tree-sitter-css = { version = "0.19.0", optional = true }
+tree-sitter-json = { version = "0.20.0", optional = true }
+tree-sitter-xml = { version = "0.5.0", optional = true }
+
+[features]
+default = ["sys-info"]
+sys-info = ["dep:sys-info"]
+tree-sitter-support = [
+    "dep:tree-sitter",
+    "dep:tree-sitter-rust",
+    "dep:tree-sitter-kotlin",
+    "dep:tree-sitter-java",
+    "dep:tree-sitter-c",
+    "dep:tree-sitter-cpp",
+    "dep:tree-sitter-python",
+    "dep:tree-sitter-javascript",
+    "dep:tree-sitter-typescript",
+    "dep:tree-sitter-go",
+    "dep:tree-sitter-html",
+    "dep:tree-sitter-css",
+    "dep:tree-sitter-json",
+    "dep:tree-sitter-xml"
+]
+download-support = [
+    "dep:reqwest",
+    "dep:zip",
+    "dep:tar",
+    "dep:flate2"
+]
+full = ["sys-info", "tree-sitter-support", "download-support"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
+panic = "abort"

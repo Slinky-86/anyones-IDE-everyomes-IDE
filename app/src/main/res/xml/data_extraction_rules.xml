@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive data from cloud backup -->
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="database" path="." />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Include user projects and settings in device transfer -->
+        <include domain="file" path="projects/" />
+        <include domain="sharedpref" path="user_preferences.xml" />
+    </device-transfer>
+</data-extraction-rules>
