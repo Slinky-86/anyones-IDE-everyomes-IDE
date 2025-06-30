@@ -95,3 +95,4 @@ Thumbs.db
 
 # Room schema
 app/schemas/
+.env
